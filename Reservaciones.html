@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+    <h1>Reservaciones</h1>
+    <p>Si desea realizar una reservacion llene el formulario presentado a continuacion</p>
+</header>
+
+
+
+<body id="Inicio">
+
+    <nav>
+    <ul>
+        <li>
+        <a href="Destinos_rutas.html">Destinos</a>
+        </li>
+
+        <li>
+        <a href="Cultura.html">Cultura del pais</a>
+        </li>
+
+        
+        <li>
+        <a href="Contacto_asistencia.html">Contactanos</a>
+        </li>
+
+        <li>
+        <a href="index.html">Pagina Principal</a>
+        </li>
+
+    </ul>
+</nav>
+
+<main class="Formulario">
+
+    <form>
+          <fieldset>
+            <legend>Formulario de Reservaciones</legend>
+
+            <div class="campo-form">
+                <label>Ingrese su nombre</label>
+                <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre y apellido 
+                " minlength="5" maxlength="100" required>
+            </div>
+            <br>
+
+            <div class="campo-form">
+                <label>Numero de telefono</label>
+                <input type="tel" name="Telefono" id="Telefono" required placeholder="Ingrese su numero de telefono"
+                 minlength="11" maxlength="11">
+            </div>
+            <br>
+
+            <div class="campo-form">
+                <label>Correo electronico</label>
+                <input type="email" name="correo" id="correo" required placeholder="Ingrese su Correo"
+                 minlength="0" maxlength="30">
+            </div>
+            <br>
+
+            <div>
+                <label>Destino o Ruta </label>
+                <select id="Destino" name="Destino">
+                    <option selected>Seleccione aqui</option>
+                    <option>Copan Ruinas</option>
+                    <option>Roatan</option>
+                    <option>Ruta Maya</option>
+                    <option>Ruta Lenca</option>
+                    <option>Ruta del Arrecife y el Caribe</option>
+                    <option>Ruta Lenca y Pueblos con Encanto </option>
+
+                </select>
+            </div>
+            <br>
+            
+            <div class="campo-form">
+                <label>Fecha Inicio</label>
+                <input type="date" name="fecha" id="fecha" 
+                minlength="2026-10-10" maxlength="2028-01-01" required>
+            </div>
+            <br>
+
+            
+            <div class="campo-form">
+                <label>Fecha Final</label>
+                <input type="date" name="fecha" id="fecha" 
+                minlength="2026-10-10" maxlength="2028-01-01" required>
+            </div>
+            <br>
+
+            <div class="campo-form">
+                <label>Numero de Adultos</label>
+                <select id="Adultos">
+                    <option selected>Seleccione aqui</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6 o mas personas</option>
+                </select>
+            </div>
+            <br>
+
+            <div class="campo-form">
+                <label>Numero de niños</label>
+                <select id="niños">
+                    <option selected>Seleccione aqui</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4 o mas niños</option>
+                </select>
+            </div>
+            <br>
+
+            <div class="campo-form">
+                <label>Tipo de hospedaje</label>
+                <select id="Hospedaje">
+                    <option selected> </option>
+                    <option>Cabaña Ecologica</option>
+                    <option>Hotel Colonial</option>
+                    <option>Hotel de Ciudad</option>
+                    <option>Campamento de Montaña</option>
+                </select>
+            </div>
+            
+            <div>
+
+                <p>Seleccione las opciones que necesita:</p>
+                    <input type="checkbox" id="accesibilidad" name="accesibilidad" required>
+                    <label>Requiero facilidades de accesibilidad.</label>
+
+                    <br><br>
+
+                    <input type="checkbox" id="guia" name="guia" required>
+                    <label>Solicito guía bilingüe (español e inglés)</label>
+
+                    <br><br>
+
+                    <input type="checkbox" id="compromiso" name="compromiso" required>
+
+                    <label>Declaro que respetaré las normas de conservación ecológica y protección
+                    del patrimonio cultural durante mi visita.
+                    </label>
+
+            </div>
+                <br><br>
+
+
+
+            <button type="Submit" class="boton">Enviar</button>
+
+          </fieldset>
+        </form>
+        <a href="#Inicio">Inicio de la pagina</a>
+
+
+
+
+</main>  
+
+</body>
+</html>

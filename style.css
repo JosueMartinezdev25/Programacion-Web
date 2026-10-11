@@ -1,0 +1,101 @@
+:root {
+    --color-acento: #3b7ac6;       /* Dorado ámbar apetitoso para botones y ofertas */
+    --color-fondo: #f0f1f1;        /* Crema marfil cálido (evita el blanco puro que fatiga la vista) */
+    --color-texto: #1c1917;        /* Carbón oscuro para máxima legibilidad según WCAG */
+    --radio-platillo: 12px;        /* Curvatura de esquinas en tarjetas */
+    --espaciado: 1.5rem;           /* 24px relativos (1.5 x 16px base) */
+}
+
+body {
+background-color: var(--color-fondo);
+color: var(--color-texto);
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+margin: 0;
+text-align: justify;
+}
+
+header {
+background-color:#176b87;
+color:  #f0f1f1;
+text-align: center;
+padding: 30px;
+        }
+
+nav{
+width: 80%;
+background-color: var(--color-fondo);
+color:var(--color-texto);
+justify-content: space-between;
+align-items: center;
+
+}
+
+.seccion-ruta{
+margin-bottom: 45px;
+}
+
+.seccion-ruta h2{
+color: #176b87; 
+font-size: var(--espaciado);
+margin-bottom: 20px;
+border-bottom: 2px solid #e2e3e6;
+padding-bottom: 8px;
+}
+
+
+.destino{
+background-color:var(--color-fondo);
+border: 1px solid #e9e2e2;
+border-radius: 12px;
+padding: 30px;
+margin-bottom: 25px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+
+}
+
+
+
+
+main {
+width: 90%;
+margin: 30px auto;
+}
+
+.Tabla_distancias{
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}        
+
+th, td {
+border: 1px solid #ccc;
+padding: 10px;
+text-align: center;
+}
+
+th {
+background-color: #176b87;
+color: #e2e3e6;
+}
+
+        
+
+.boton{
+    background-color: #176b87;
+    color: #ffffff;
+    border: 2px solid var(--color-acento);
+    padding: 0.75rem 1.5rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    /* Transición fluida de 250ms para todos los cambios de propiedad */
+    transition: all 0.25s ease-in-out;
+}
+
+.boton:hover{
+    background-color: var(--color-acento);
+    color: #040000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(245, 158, 11, 0.35);
+}
